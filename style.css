@@ -1,0 +1,118 @@
+/* Basic styling for both pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/340608542_1001592257889992_4597342740277079790_n.png?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFePkF7FYXAy_7QPa6Ofr_oZsNsGEg_GOlmw2wYSD8Y6bZisuhtMkJRc1O3uiUT38Jns5N2T_TLde7ythwqkI12&_nc_ohc=zpiWqk-5XKsQ7kNvgHmT8T_&_nc_zt=23&_nc_ht=scontent.fmnl31-1.fna&_nc_gid=AR-KoY1zKdVlqLhpFT1bSqO&oh=00_AYDi1SKuhYijq9d9-LbjfS1AW9y9nGMbKNZ4xpTDAj0KAQ&oe=6730F3BD') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Fade-in animation for sections */
+section {
+    padding: 1.5em;
+    max-width: 550px;
+    margin: 2em auto;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.85);
+    color: #fff;
+    padding: 0.5em 0; 
+    text-align: center;
+    font-size: 1.2em; 
+    border-bottom: 1px solid #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Smooth transition for nav links */
+nav a {
+    color: #fff;
+    margin: 0 0.8em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Heading styling */
+h2 {
+    color: #444;
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Transition effect for weather info */
+#weather-info {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin-top: 1em;
+    background: #e0f7fa;
+    padding: 0.8em;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#weather-info:hover {
+    background-color: #b2ebf2;
+}
+
+/* Input fields */
+#contact-form input, #contact-form textarea, #cityForm input {
+    width: 100%;
+    padding: 0.4em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.08);
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus, #cityForm input:focus {
+    border-color: #00796b;
+}
+
+/* Button styling with scale effect */
+button {
+    padding: 0.6em 1em;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05); /* Scale up effect */
+}
+
+button:active {
+    transform: scale(0.97);
+}
